@@ -4,6 +4,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Contact from '../views/Contact';
+import Profile from '../views/Profile';
 
 export default function MenuBurger() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -37,13 +38,16 @@ export default function MenuBurger() {
             <Link to='/'>
               <MenuItem onClick={handleClose}>Buy</MenuItem>
             </Link>
-            <MenuItem onClick={handleClose}>My account</MenuItem>
+            <Link to='/Profile'>
+              <MenuItem onClick={handleClose}>Profile</MenuItem>
+            </Link>
             <Link to='/Contact'>
               <MenuItem onClick={handleClose}>Contact Us</MenuItem>
             </Link>
           </Menu>
           <Switch>
             <Route exact path='/' />
+            <Route exact path='/Profile' component={Profile} />
             <Route exact path='/Contact' component={Contact} />
           </Switch>
         </div>
