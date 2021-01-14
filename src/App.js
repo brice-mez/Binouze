@@ -1,11 +1,22 @@
+import React, {  createContext, useState } from 'react';
 import './App.css';
-import MenuBurger from './components/MenuBurger';
+import AppRouter from './router/AppRouter';
+
+export const ShoppingCartContext = createContext();
+
 
 function App() {
+  const [itemsInCart, updateCart] = useState([])
+  console.log("render", itemsInCart);
+
+  
+
   return (
+    <ShoppingCartContext.Provider value={{itemsInCart, updateCart}}>
     <div className='App'>
-      <MenuBurger />
+      <AppRouter />
     </div>
+    </ShoppingCartContext.Provider>
   );
 }
 

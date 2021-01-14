@@ -1,12 +1,20 @@
 import React from "react";
-import { Badge } from "@material-ui/core";
+import { Badge, IconButton } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   return (
-    <Badge badgeContent={2} color="secondary">
-      <ShoppingCart />
-    </Badge>
+    <IconButton
+      component={Link}
+      to="/Cart"
+      aria-label="Show cart items"
+      color="inherit"
+    >
+      <Badge badgeContent={3} color="secondary">
+        <ShoppingCart />
+      </Badge>
+    </IconButton>
   );
 };
 
