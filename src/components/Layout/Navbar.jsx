@@ -1,8 +1,7 @@
 import React from "react";
 import MenuBurger from "../MenuBurger";
-import SearchIcon from "../../components/icons/SeachIcon";
-import ShoppingCart from "../../components/icons/ShoppingCart";
-import StyleHeader from "../Layout/StyleHeader.css";
+import Cart from "../icons/ShoppingCart";
+import "../Layout/Navbar.css";
 
 export default function Header() {
   return (
@@ -14,8 +13,7 @@ export default function Header() {
         <h1>Binouze</h1>
       </div>
       <div className="cart">
-        <SearchIcon />
-        <ShoppingCart />
+        <Cart />
       </div>
     </div>
   );
