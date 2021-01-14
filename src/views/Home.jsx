@@ -1,11 +1,11 @@
-import React from 'react';
-import MenuBurger from '../components/MenuBurger';
-
+import React from "react";
+import Header from "../components/Layout/Header";
+import HomeFrame from "../components/Layout/HomeFrame";
 export default function Home() {
   return (
     <div>
-      <h1>Binouze</h1>
-      <MenuBurger />
+      <Header />
+      <HomeFrame />
     </div>
   );
 }
