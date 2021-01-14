@@ -4,6 +4,8 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Contact from "../views/Contact";
+import iconbeer from "../images/iconbeer.svg";
+import "./MenuBurger.css";
 
 export default function MenuBurger() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -25,7 +27,7 @@ export default function MenuBurger() {
             aria-haspopup="true"
             onClick={handleClick}
           >
-            Open Menu
+            <img className="MenuBurgerIcon" src={iconbeer} alt="menuburger" />
           </Button>
           <Menu
             id="simple-menu"
