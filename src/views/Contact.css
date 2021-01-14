@@ -1,5 +1,5 @@
 .main {
   background-image: url('../images/backgroundbeer.jpg');
-  filter: grayscale(40%);
+  filter: grayscale(20%);
   height: 100%;
 }
