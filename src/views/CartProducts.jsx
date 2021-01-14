@@ -1,7 +1,9 @@
 import { useContext } from "react";
 import { ShoppingCartContext } from "../App";
+import Navbar from "../components/Layout/Navbar";
+import HomeFrame from "../components/Layout/HomeFrame";
 
-export default function CartProducts() {
+export default function Products() {
   const context = useContext(ShoppingCartContext);
   const { updateCart, itemsInCart } = context;
 
@@ -26,6 +28,8 @@ export default function CartProducts() {
 
   return (
     <div>
+      <Navbar />
+      <HomeFrame />
       <h1>ShoppingCart</h1>
       {hasItems ? (
         groupedItems.map(({ item, quantity }) => {
@@ -35,7 +39,7 @@ export default function CartProducts() {
                 <b>{item.name}</b>
               </p>
               <p>
-                €{item.price} x {quantity} = €{item.price * quantity}
+                ${item.price} x {quantity} = ${item.price * quantity}
               </p>
 
               <button
@@ -56,7 +60,7 @@ export default function CartProducts() {
       )}
 
       {hasItems && <h5>Total {itemsInCart.length} item(s)</h5>}
-      {hasItems && <h5>Total Amount: {totalAmount}€ </h5>}
+      {hasItems && <h5>Total Amount: {totalAmount}</h5>}
     </div>
   );
 }
