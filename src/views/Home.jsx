@@ -8,13 +8,24 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import AddShoppingCartSharpIcon from '@material-ui/icons/AddShoppingCartSharp';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import './Home.css';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: '80%',
+    marginTop: '2em',
   },
   media: {
     height: 200,
+    paddingTop: '40%',
+  },
+  beercard: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -23,10 +34,10 @@ function Home() {
   const classes = useStyles();
 
   return (
-    <div>
-      <h1>Binouze</h1>
-      <h2>Achètes en mets en fav tes bières</h2>
-      <div className='beercard'>
+    <div className={classes.container}>
+      <h1 className='titlehome'>Binouze</h1>
+      <h2 className='titlehome2'>Achètes et mets en fav tes bières</h2>
+      <div className={classes.beercard}>
         {bieres.map((biere) => (
           <Card className={classes.root}>
             <CardActionArea>
@@ -42,17 +53,17 @@ function Home() {
                 <Typography variant='body2' color='textSecondary' component='p'>
                   {biere.text}
                 </Typography>
-                <Typography variant='body2' color='textSecondary' component='p'>
+                <Typography variant='body2' color='textPrimary' component='p'>
                   {biere.price}
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions className='panelbutton'>
               <Button size='small' color='primary'>
-                Share
+                <FavoriteIcon color='secondary' />
               </Button>
               <Button size='small' color='primary'>
-                Learn More
+                <AddShoppingCartSharpIcon color='action' />
               </Button>
             </CardActions>
           </Card>
