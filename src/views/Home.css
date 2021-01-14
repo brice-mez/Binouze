@@ -1,0 +1,15 @@
+.panelbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titlehome {
+  color: #fff;
+  filter: drop-shadow(0px 3px 1px #636363);
+}
+
+.titlehome2 {
+  color: #fff;
+  filter: drop-shadow(0px 3px 1px #636363);
+}
