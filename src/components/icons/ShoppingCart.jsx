@@ -1,6 +1,6 @@
 import React from "react";
-import ShoppingCartSharpIcon from "@material-ui/icons/ShoppingCartSharp";
+import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 
 export default function ShoppingCart() {
-  return <ShoppingCartSharpIcon />;
+  return <ShoppingCartOutlinedIcon />;
 }
