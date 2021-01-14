@@ -1,6 +1,13 @@
 import React from "react";
-import ShoppingCartSharpIcon from "@material-ui/icons/ShoppingCartSharp";
+import { Badge } from "@material-ui/core";
+import { ShoppingCart } from "@material-ui/icons";
 
-export default function ShoppingCart() {
-  return <ShoppingCartSharpIcon />;
-}
+const Cart = () => {
+  return (
+    <Badge badgeContent={2} color="secondary">
+      <ShoppingCart />
+    </Badge>
+  );
+};
+
+export default Cart;
