@@ -1,10 +1,10 @@
 import './App.css';
-import Home from './views/Home';
+import MenuBurger from './components/MenuBurger';
 
 function App() {
   return (
     <div className='App'>
-      <Home />
+      <MenuBurger />
     </div>
   );
 }
