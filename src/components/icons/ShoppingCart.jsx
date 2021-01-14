@@ -2,6 +2,7 @@ import React from "react";
 import { Badge, IconButton } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import ShoppingCartContext from "../../App";
 
 const Cart = () => {
   return (
@@ -11,7 +12,7 @@ const Cart = () => {
       aria-label="Show cart items"
       color="inherit"
     >
-      <Badge badgeContent={3} color="secondary">
+      <Badge badgeContent={2} color="secondary">
         <ShoppingCart />
       </Badge>
     </IconButton>
