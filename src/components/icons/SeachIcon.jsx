@@ -1,6 +1,6 @@
 import React from "react";
-import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
+import SearchIcon from "@material-ui/icons/Search";
 
-export default function SearchIcon() {
-  return <SearchOutlinedIcon />;
+export default function SearchIcn() {
+  return <SearchIcon />;
 }

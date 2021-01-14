@@ -1,9 +1,9 @@
 import React from "react";
-
+import Header from "../components/Layout/Header";
 export default function Home() {
   return (
     <div>
-      <h1>Binouze</h1>
+      <Header />
     </div>
   );
 }
