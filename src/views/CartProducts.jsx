@@ -39,7 +39,7 @@ export default function Products() {
                 <b>{item.name}</b>
               </p>
               <p>
-                ${item.price} x {quantity} = ${item.price * quantity}
+                {item.price} € x {quantity} = {item.price * quantity} €
               </p>
 
               <button
@@ -60,7 +60,7 @@ export default function Products() {
       )}
 
       {hasItems && <h5>Total {itemsInCart.length} item(s)</h5>}
-      {hasItems && <h5>Total Amount: {totalAmount}</h5>}
+      {hasItems && <h5>Total Amount: {totalAmount} €</h5>}
     </div>
   );
 }
