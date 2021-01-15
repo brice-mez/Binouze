@@ -15,7 +15,7 @@ const Cart = () => {
       color="inherit"
     >
       <Badge badgeContent={n} color="secondary">
-        <ShoppingCart />
+        <ShoppingCart fontSize="large" />
       </Badge>
     </IconButton>
   );
