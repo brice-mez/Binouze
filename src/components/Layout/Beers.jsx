@@ -50,7 +50,7 @@ function Beers() {
 
   return (
     <div>
-      <h2 className={classes.title}>Achètes tes bières</h2>
+      <h1 className={classes.title}>Achètes tes bières</h1>
       <div className={classes.beercard}>
         {bieres.map((biere) => (
           <Card className={classes.root}>

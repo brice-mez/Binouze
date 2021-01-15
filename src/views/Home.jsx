@@ -11,7 +11,7 @@ function Home() {
       <Helmet>
         <meta charSet='utf-8' />
         <title>Binouze</title>
-        <link rel='canonical' href='http://mysite.com/exemple' />
+        <link rel='canonical' href='https://sleepy-nobel-079fa1.netlify.app' />
         <meta name='description' content='Acheter des bières' />
       </Helmet>
       <Navbar />
