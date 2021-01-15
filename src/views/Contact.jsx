@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import LocalBarIcon from '@material-ui/icons/LocalBar';
-import './Contact.css';
+import Navbar from '../components/Layout/Navbar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
     backgroundColor: '#947349',
+    marginBottom: '5rem',
   },
 }));
 
@@ -24,6 +25,7 @@ export default function Contact() {
 
   return (
     <div className='main'>
+      <Navbar />
       <form className={classes.root} noValidate autoComplete='off'>
         <TextField
           id='outlined-basic-name'
@@ -51,7 +53,7 @@ export default function Contact() {
           className={classes.button}
           endIcon={<LocalBarIcon>Drink</LocalBarIcon>}
         >
-          DRINK
+          SANTE
         </Button>
       </form>
     </div>
