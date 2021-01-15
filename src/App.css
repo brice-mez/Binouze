@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url('./images/backgroundbeer.jpg');
+  background-image: url("./images/backgroundbeer.jpg");
   filter: grayscale(30%);
   background-attachment: fixed;
   background-repeat: no-repeat;

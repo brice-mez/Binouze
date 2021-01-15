@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Layout/Navbar';
 import Beers from '../components/Layout/Beers';
+import HomeFrame from '../components/Layout/HomeFrame';
+import Footer from '../components/Layout/Footer';
 import { Helmet } from 'react-helmet';
 
 function Home() {
@@ -13,7 +15,9 @@ function Home() {
         <meta name='description' content='Acheter des bières' />
       </Helmet>
       <Navbar />
+      <HomeFrame />
       <Beers />
+      <Footer />
     </div>
   );
 }
