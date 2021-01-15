@@ -14,7 +14,7 @@ function App() {
   return (
     <ShoppingCartContext.Provider value={{itemsInCart, updateCart}}>
     <div className='App'>
-      <AppRouter  itemsInCart={itemsInCart}/>
+      <AppRouter  />
     </div>
     </ShoppingCartContext.Provider>
   );

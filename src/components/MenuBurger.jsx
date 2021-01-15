@@ -34,7 +34,7 @@ export default function MenuBurger() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} component={Link} to="/">
-          Acheter
+          Home
         </MenuItem>
         <MenuItem onClick={handleClose} component={Link} to="/Profile">
           Profil
